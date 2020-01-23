@@ -1,0 +1,20 @@
+version: 1
+rules:
+  - expected: （
+    patterns: (
+    prh: 全角括弧を利用してください
+
+  - expected: ）
+    patterns: )
+    prh: 全角括弧を利用してください
+
+  - expected: 半角数字
+    patterns: "/[０-９]/"
+    prh: 半角数字を利用してください
+
+  - expected: TEXTLINT
+    patterns: textlint
+
+  - expected: ""
+    patterns: "/[\\u034f\\u200b\\u200c\\u200d\\u200e\\u200f\\u2028\\u2029\\u202a\\u202b\\u202c\\u202d\\u202e\\u2061\\u2062\\u2063\\ufeff]/g"
+    prh: ゼロ幅スペースを検出しました

@@ -1,0 +1,25 @@
+{
+  "name": "textlint-20200122",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.html": "textlint"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "husky": "^4.2.0",
+    "lint-staged": "^10.0.2",
+    "textlint": "^11.6.1",
+    "textlint-rule-prh": "^5.3.0"
+  }
+}
